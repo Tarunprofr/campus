@@ -2,7 +2,12 @@
 
 ## Follow the steps to get started
 1) Run Composer Update command.
-2) Update Database Details in .env file.
-3) Run php artisan migrate:fresh --seed
-4) Run php artisan passport:install
-5) Done!
+2) Run cp .env.example .env or copy .env.example .env
+3) Run php artisan config:clear
+4) Run php artisan key:generate
+5) Update Database Details in .env file.
+6) Run php artisan config:cache
+7) Run php artisan migrate:fresh --seed
+8) Run php artisan passport:install
+9) php artisan serve
+10) Done!
